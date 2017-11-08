@@ -1,0 +1,34 @@
+
+/*Sets the Heading text color */
+h2{
+    color: darkblue;
+}
+
+/*Setting the image to fit the div(imgcontainer class) */
+.imgcontainer img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Fits the image perfectly into the div container */
+    overflow: hidden;
+}
+
+/*Setting the size of the div(imgcontainer classs */
+.imgcontainer { 
+    width: 200px;
+    height: 160px;
+ }
+
+ /* On hover, changing the border radius to 10% to get rounded corners and increasing the width and height of the image using the transition and transform for animation */
+img:hover{
+    border-radius:10%;
+    width:500px;
+    height:400px;
+    -webkit-transition: ease-out 1s;  /*For Safari browser */
+    transition: ease-out 1s; /* Transition of the image to bigger size will happen over the course of 1s */
+    -ms-transform: translate(25px, 25px); /* For IE 9 browser*/
+    -webkit-transform: translate(25px, 25px); /*For Safari browser */
+    transform: translate(25px, 25px);/* Translates the image position by 25px on both x and y axes during the transition using translate() method*/
+}
+
+
